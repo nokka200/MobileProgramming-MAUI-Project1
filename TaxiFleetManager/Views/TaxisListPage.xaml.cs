@@ -15,7 +15,7 @@ public partial class TaxisListPage : ContentPage
 	private void MenuItem_Clicked(object sender, EventArgs e)
 	{
 		MenuItem manuItem = (MenuItem)sender;
-		ViewModels.TaxiViewModel taxi = (ViewModels.TaxiViewModel)manuItem.CommandParameter;
+		ViewModels.TaxiViewModel taxi = (ViewModels.TaxiViewModel)manuItem.BindingContext;
 		App.MainViewModel.DeleteTaxi(taxi);
 	}
 

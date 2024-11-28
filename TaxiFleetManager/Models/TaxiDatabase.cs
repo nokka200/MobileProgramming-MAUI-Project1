@@ -16,7 +16,7 @@ public class TaxiDatabase
     private static JsonSerializerOptions writeOptions = new JsonSerializerOptions { WriteIndented = true };
     public async static Task<IEnumerable<Taxi>> GetTaxi()
     {
-        string filePath = Path.Combine(FileSystem.AppDataDirectory, "data.json");
+        string filePath = Path.Combine("/Users/nokka200/Developer/Karelia/Vuosi03/Mobiilikehitys/Yksiloprojekti1/TaxiFleetManager/Resources/Raw","data.json");
         try
         {
             if(!File.Exists(filePath))
@@ -42,7 +42,7 @@ public class TaxiDatabase
     public async static Task WriteTaxis(ObservableCollection<ViewModels.TaxiViewModel> taxis)
     {
         string json = JsonSerializer.Serialize(taxis, writeOptions);
-        string filePath = Path.Combine(FileSystem.AppDataDirectory, "data.json");
+        string filePath = Path.Combine("/Users/nokka200/Developer/Karelia/Vuosi03/Mobiilikehitys/Yksiloprojekti1/TaxiFleetManager/Resources/Raw","data.json");
 
         try
         {
