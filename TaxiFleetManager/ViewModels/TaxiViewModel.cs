@@ -39,10 +39,10 @@ public class TaxiViewModel : ObservableObject
 
     public TaxiViewModel(Taxi taxi)
     {
-        Id = taxi.Id;
-        Make = taxi.Make;
-        Model = taxi.Model;
-        Electric = taxi.Electric;
-        ImagePath = taxi.ImagePath;
+        _id = taxi.Id;
+        _make = taxi.Make;
+        _model = taxi.Model;
+        _electric = taxi.Electric;
+        _imagePath = taxi.ImagePath;
     }
 }
