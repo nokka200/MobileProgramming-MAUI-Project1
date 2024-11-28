@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TaxiFleetManager.Views.AddTaxiPage"
+             Title="AddTaxiPage">
+    <VerticalStackLayout>
+        <Entry x:Name="TaxiIdEntry" Placeholder="Taxi Id" TextChanged="Entry_IdChanged" Completed="Entry_IdCompleted"/>
+        <Entry x:Name="TaxiMakeEntry" Placeholder="Taxi Make" TextChanged="Entry_MakeChanged" Completed="Entry_MakeCompleted"/>
+        <Entry x:Name="TaxiModelEntry" Placeholder="Taxi Model" TextChanged="Entry_ModelChanged" Completed="Entry_ModelCompleted"/>
+        <Entry x:Name="TaxiElectricEntry" Placeholder="Electric" TextChanged="Entry_ElectricChanged" Completed="Entry_ElectricCompleted"/>
+
+        <Button Text="Add Taxi" Clicked="Button_AddTaxiClicked"/>
+    </VerticalStackLayout>
+</ContentPage>

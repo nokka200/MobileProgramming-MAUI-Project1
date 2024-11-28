@@ -2,23 +2,24 @@
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
-
 	public MainPage()
 	{
 		InitializeComponent();
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
+	private async void Handle_InspectFleet(object sender, EventArgs e)
 	{
-		count++;
+		await Navigation.PushAsync(new Views.TaxisListPage());
+	}
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
+	private async void Handle_AboutPage(object sender, EventArgs e)
+	{
+		await Navigation.PushAsync(new Views.TaxiAboutPage());
+	}
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
+	private async void Handle_AddTaxi(object sender, EventArgs e)
+	{
+		await Navigation.PushAsync(new Views.AddTaxiPage());
 	}
 }
 

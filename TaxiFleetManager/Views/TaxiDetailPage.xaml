@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:TaxiFleetManager.ViewModels"
+             x:Class="TaxiFleetManager.Views.TaxiDetailPage"
+             x:DateType="vm:TaxiViewModel"
+             Title="TaxiDetailPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="{Binding Id, StringFormat='Taxi Number: {0}'}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text="{Binding Make, StringFormat='Taxi Make: {0}'}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text="{Binding Model, StringFormat='Taxi Model: {0}'}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text="{Binding Electric, StringFormat='Electric: {0}'}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Image Source="{Binding ImagePath}"/>
+    </VerticalStackLayout>
+</ContentPage>
+
+
+

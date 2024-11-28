@@ -1,0 +1,37 @@
+[
+    {
+        "Id": "U1550",
+        "Make": "Toyota",
+        "Model": "Prius",
+        "Electric": "No",
+        "ImagePath": "taxi_fleet_logo.png"
+    },
+    {
+        "Id": "G6770",
+        "Make": "Mercedes Benz",
+        "Model": "Vito",
+        "Electric": "No",
+        "ImagePath": "taxi_fleet_logo.png"
+    },
+    {
+        "Id": "G1990",
+        "Make": "Tesla",
+        "Model": "Model 3",
+        "Electric": "Yes",
+        "ImagePath": "taxi_fleet_logo.png"
+    },
+    {
+        "Id": "U3249",
+        "Make": "Skoda",
+        "Model": "Octavia",
+        "Electric": "No",
+        "ImagePath": "taxi_fleet_logo.png"
+    },
+    {
+        "Id": "A1990",
+        "Make": "Audi",
+        "Model": "A6",
+        "Electric": "Yes",
+        "ImagePath": "taxi_fleet_logo.png"
+    }
+]
