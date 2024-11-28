@@ -10,6 +10,8 @@ public partial class App : Application
 		MainPage = new AppShell();
 		MainViewModel = new();
 		InitializeAsync();
+
+		UserAppTheme = AppTheme.Dark;
 	}
 
 	private async void InitializeAsync()
